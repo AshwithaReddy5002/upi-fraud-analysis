@@ -42,13 +42,13 @@ A custom rule was built, flagging transactions as risky when they occurred on a 
 **Recommendation:** This rule should not be used as a standalone fraud detection system, since it only catches a small portion of overall fraud. It should instead be used as one component of a broader system — automatically flagging new-device-plus-night transactions for priority review, while additional rules are developed around other signals (transaction velocity, amount deviation, IP mismatches) to improve overall coverage.
 
 ---
-
 ## Visualizations
+
 ### Device Fraud Rate
-[Device Fraud Rate](screenshots/New Device vs Familiar Device.png)
+![Device Fraud Rate](screenshots/device_fraud_chart.png)
 
 ### Transaction Timing Fraud Rate
-[Transaction Timing Fraud Rate](screenshots/Night Transaction vs Day Transaction.png)
+![Transaction Timing Fraud Rate](screenshots/timing_fraud_chart.png)
 
 ## Python Skills Demonstrated
 - Data cleaning: handling missing values (mode/median imputation), identifying and dropping unreliable columns based on evidence, not assumption
@@ -60,6 +60,6 @@ A custom rule was built, flagging transactions as risky when they occurred on a 
 - Data visualization with Matplotlib
 
 ## Files
-- `UPI_Fraud_Analysis.ipynb` — full analysis: data loading, cleaning, merging, all 6 business questions, and charts
+- `_UPI_Fraud_Analysis_.ipynb` — full analysis: data loading, cleaning, merging, all 6 business questions, and charts
 - `README.md` — this summary
 - `screenshots/` — chart images referenced above
