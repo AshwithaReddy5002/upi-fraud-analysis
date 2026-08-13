@@ -44,8 +44,11 @@ A custom rule was built, flagging transactions as risky when they occurred on a 
 ---
 
 ## Visualizations
-- `screenshots/device_fraud_chart.png` — Fraud rate: new device vs familiar device
-- `screenshots/timing_fraud_chart.png` — Fraud rate: night vs day transactions
+### Device Fraud Rate
+[Device Fraud Rate](screenshots/New Device vs Familiar Device.png)
+
+### Transaction Timing Fraud Rate
+[Transaction Timing Fraud Rate](screenshots/Night Transaction vs Day Transaction.png)
 
 ## Python Skills Demonstrated
 - Data cleaning: handling missing values (mode/median imputation), identifying and dropping unreliable columns based on evidence, not assumption
