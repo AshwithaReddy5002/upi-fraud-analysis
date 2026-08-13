@@ -3,6 +3,8 @@
 ## Overview
 This project analyzes 20,000 UPI transactions across 2,000 users and 400 merchants (Jan–Dec 2024), covering data cleaning, table merging, and business-question-driven fraud analysis. Using Python and Pandas, the data was cleaned, connected across three source tables, and queried to answer real fraud-risk questions — each paired with a data-driven insight and recommendation, following the same insight-first approach as my SQL retail analysis project.
 
+**Dataset:** [UPI Payment Transactions India](https://www.kaggle.com/datasets/maulikgajera/upi-payment-transactions-india) — a synthetic dataset simulating 20,000 UPI transactions.
+
 ## Data Structure
 Three related source files: `transactions.csv`, `users.csv`, and `merchants.csv`, merged into a single working table (`merged_data`) using `user_id` (transactions ↔ users) and `receiver_id`/`merchant_id` (transactions ↔ merchants). A fourth file, `fraud_labels.csv`, was checked and found to duplicate columns already present in `transactions.csv`, so `transactions.csv` was used as the single source of truth for fraud-related fields rather than merging both.
 
